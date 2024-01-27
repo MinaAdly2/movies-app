@@ -10,7 +10,7 @@ abstract class BaseMovieRemoteDataSource {
   Future<List<MovieModel>> getTopRatedMovies();
 }
 
-class MovieRemoteDataSource implements BaseMovieRemoteDataSource {
+class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
   @override
   Future<List<MovieModel>> getNowPlayingMovies() async {
     final response = await Dio().get(ApiConstants.nowPlayingMoviesPath);
