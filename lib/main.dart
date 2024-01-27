@@ -1,25 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/movies/domain/entities/movie.dart';
 
 void main() {
-  Movie movie = const Movie(
-      id: 1,
-      title: "title",
-      backdropPath: "backdropPath",
-      genreIds: [0],
-      overView: "overView",
-      voteAverage: 4.4);
-  Movie movie1 = const Movie(
-      id: 1,
-      title: "title",
-      backdropPath: "backdropPath",
-      genreIds: [0],
-      overView: "overView",
-      voteAverage: 4.4);
-
-  print(movie == movie1);
-  print(movie.hashCode);
-  print(movie1.hashCode);
   runApp(const MyApp());
 }
 
